@@ -1,0 +1,446 @@
+/*
+Theme Name: Lage Construtora
+Theme URI: http://www.lageconstrutora.com.br
+Author: Marcel Santos
+Author URI: http://kbmms.github.io/portfolio
+Description: Site da empresa Lage Construtora
+Version 1.0
+*/
+body {
+    background: #fff;
+}
+.menu nav li{
+    display: inline-block;
+}
+.header {
+border-bottom: 1px solid #ccc;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+}
+.header-interna {
+border-bottom: 1px solid #ccc;
+    z-index: 9999;
+    width: 100%;
+    background: #000;
+}
+.menu nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menu nav a {
+color:  #fff;
+font-size: 13px;/* Aproximação devido à substituição de fonte */
+font-weight: 600;
+padding: 0 5px;
+    font-family: Montserrat;
+}
+
+.menu a.menu-estilizado-topo {
+  font-family: Montserrat;
+color:  #000000;
+font-size: 13px;/* Aproximação devido à substituição de fonte */
+font-weight: 600;
+line-height: 60px;/* Aproximação devido à substituição de fonte */
+text-align: left;
+border-radius: 3px;
+background-color:  #ffffff;
+padding: 10px 20px;
+}
+.menu-footer a:hover {
+     color: #dfb259;
+
+}
+.menu-footer a.btn-estilizado-footer{
+    border-radius: 3px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+.menu nav a:hover{
+    color: #dfb259;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    z-index: 999999;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #FFF;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #dfb259;
+
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+}
+
+
+@media (min-width: 993px){
+.bx-viewport {
+    height: 600px !important;
+}
+
+.bx-wrapper img {
+ /*   max-width: 100%;*/
+    display: block;
+    height: 600px;
+}
+.texto-slider h4 {
+font-family: 'Montserrat', sans-serif;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-0%);
+    text-align: center;
+    color: #dfb259;
+    font-size: 55px;/* Aproximação devido à substituição de fonte */
+    font-weight: 700;
+}
+.menu {
+    position: relative;
+    height: 168px;
+}
+}
+@media (max-width: 992px){
+
+
+.bx-wrapper img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+.texto-slider h4 {
+
+    top: 50%;
+    position: absolute;
+    transform: translateY(-0%);
+    text-align: center;
+    color: #dfb259;
+    font-size: 35px;/* Aproximação devido à substituição de fonte */
+    font-weight: 700;
+}
+.menu {
+    position: relative;
+    height:100px;
+}
+}
+
+@media (max-width: 768px){
+.bx-wrapper img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+.texto-slider h4 {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #dfb259;
+    font-size: 20px;/* Aproximação devido à substituição de fonte */
+    font-weight: 700;
+}
+
+}
+
+
+
+
+/*=========== MAIN CONTENT ============*/
+.main-content-container {
+    position: relative;
+    top: 25px;
+}
+.main-content {
+    background: #fff;
+    background: url(imagens/bg/bg-1_02.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+}
+.card1 {
+    background-color: #2f2f2f;
+    height: 290px;
+}
+.card1 h4 {
+    color:#fff;
+    font-size: 28px;/* Aproximação devido à substituição de fonte */
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+.card1 p {
+    font-family: 'Montserrat', sans-serif;
+color:rgba(255, 255, 255, 0.2);
+font-size: 15px;/* Aproximação devido à substituição de fonte */
+font-weight: 400;
+}
+
+
+.card2 .img-responsive, .card4 .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    right: 43px;
+}
+
+.card3 {
+    background-color: #dfb259;
+    border-radius: 100px;
+
+}
+.card3 h4 {
+    color:#fff;
+    font-size: 28px;/* Aproximação devido à substituição de fonte */
+    font-weight: 700;
+}
+.card3 p {
+color:#fff;
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;/* Aproximação devido à substituição de fonte */
+font-weight: 400;
+}
+.card3, .card1, .card4, .card2 {
+    height: 250px;
+    position: relative;
+}
+.position {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+
+.container-fluid h1 {
+
+font-family: Montserrat;
+color: #000000;
+font-size: 20px; /* Aproximação devido à substituição de fonte */
+font-weight: 700;
+line-height: 60px; /* Aproximação devido à substituição de fonte */
+text-align: left;
+
+}
+
+/*============== Quem Somos ===========*/
+.quem-somos p{
+font-family: Montserrat;
+color: #000000;
+font-size: 15px; /* Aproximação devido à substituição de fonte */
+font-weight: 300;
+line-height: 23px; /* Aproximação devido à substituição de fonte */
+text-align: left;
+}
+
+.quem-somos {
+    padding: 50px 0;
+    position: relative;
+    top: 65px;
+}
+
+
+
+
+
+
+
+/*=============== Clientes ==============*/
+.clientes h1{
+    position: relative;
+    top: 90px;
+}
+.owl {
+    border-radius: 10px;
+border-width: 2px;
+border-color:
+#e9e9e9;
+border-style: solid;
+background-color:#f8f8f8;
+padding: 20px 65px;
+    top: 85px;
+    position: relative;
+}
+.customNavigation {
+    position: relative;
+}
+a.btn.prev, a.btn.next  {
+border-width: 2px;
+border-color:
+#e9e9e9;
+border-style: solid;
+background-color:
+#f8f8f8;
+width: 41px;
+height: 41px;
+
+}
+a.btn.prev {
+    position: absolute;
+    bottom: -22px;
+    right: 0;
+}
+a.btn.next{
+    position: relative;
+    bottom: -22px;
+    right: 0;
+}
+/*a.btn.prev {
+    position: absolute;
+    bottom: 39px;
+    left: 0;
+}*/
+
+
+
+/*============== Footer =============*/
+
+.footer {
+    background: url(imagens/bg/bg-footer_02.jpg);
+    padding: 0;
+}
+
+.footer p {
+    font-family: Montserrat;
+color: rgba(255, 255, 255, 0.2);
+font-size: 10px; /* Aproximação devido à substituição de fonte */
+font-weight: 600;
+
+}
+.footer ul {
+    padding: 0;
+}
+.footer li {
+
+display: inline-block;
+text-align: center;
+}
+.footer li a {
+    font-family: Montserrat;
+color:#ffffff;
+font-size: 13px;/* Aproximação devido à substituição de fonte */
+font-weight: 600;
+margin: 0 10px;
+}
+
+@font-face {
+     font-family: helveticaneuesemi;
+     src: url('fonts/montserrat/Montserrat-SemiBold.otf');
+}
+@font-face {
+     font-family: helveticaneuelight;
+     src: url('fonts/montserrat/Montserrat-Light.otf');
+}
+.face-line {
+    border-bottom: 1px solid #fff;
+}
+.row.facebook-box {
+    margin-top: 24px;
+}
+.facebook-box p {
+font-family: Montserrat;
+color:
+#ffffff;
+font-size: 19.99px;/* Aproximação devido à substituição de fonte */
+font-weight: 700;
+line-height: 25px;/* Aproximação devido à substituição de fonte */
+
+}
+span.face-btn {
+    font-family: Montserrat;
+color:#4979dc;
+font-size: 19.99px;/* Aproximação devido à substituição de fonte */
+font-weight: 700;
+line-height: 25px;/* Aproximação devido à substituição de fonte */
+transform: scaleY(1.0004);
+}
+
+
+
+
+
+
+
+
+
+/*=================== INTERNAS ==================*/
+.clientes-interna li {
+    display: inline-block;
+    margin: 6px 29px;
+}
+.clientes-interna ul {
+    padding: 0;
+}
+.interna-title-full {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.interna-title-full h2 {
+ font-family: Montserrat;
+ font-size: 30px;
+ color:#dfb259;
+}
+span.marcador {
+    color: #999;
+}
+.interna-content-full h4, .clientes-interna-full h4, .quem-somos-full h4{
+     font-family: Montserrat;
+     color: #000;
+     font-size: 15px;
+}
+.interna-content-full p, .servicos-interna-full p, .clientes-interna-full p, .quem-somos-full p {
+    font-family: Montserrat;
+}
+.interna-content-full, .servicos-interna-full, .clientes-interna-full, .quem-somos-full {
+        padding: 40px 0;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border: 1px solid orange;
+}
+.form-group input, textarea{
+     font-family: Montserrat;
+     font-size: 14px;
+}
+.form-control:focus::-webkit-input-placeholder {
+   color: #000;
+     font-family: Montserrat;
+   font: 14px ;
+}
+
+.form-control:focus:-moz-placeholder {
+   color: #000;
+     font-family: Montserrat;
+   font: 14px ;
+}
+
+.form-control:focus::-moz-placeholder {
+   color: #000;
+     font-family: Montserrat;
+   font: 14px;
+}
+
+.form-control:focus:-ms-input-placeholder {
+   color: #000;
+     font-family: Montserrat;
+   font: 14px;
+}
+.btn-send-form button{
+    background: #000;
+     font-family: Montserrat;
+     color: #fff;
+}
+.texto-interna-cima p {
+      font-family: Montserrat;
+      font-size: 14px;
+      color: #000;
+}
