@@ -4,11 +4,12 @@
         <h2><span class="marcador">&bull; </span>   <?php the_title(); ?></h2>
     </div>
 </div>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="container-full interna-content-full">
     <div class="container">
-    <div class="col-md-12 texto-interna-cima"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, sequi.</p></div>
-
-<form>
+    <div class="col-md-12 texto-interna-cima"><?php the_content(); ?></div>
+    <?php echo do_shortcode('[contact-form-7 id="49" title="Contato"]') ?>
+<!-- <form>
     <div class="col-md-3">
           <div class="form-group">
             <input type="nome" class="form-control" id="exampleInputEmail1" placeholder="Nome">
@@ -33,7 +34,12 @@
          <button type="submit" class="pull-right btn btn-default">Enviar Mensagem</button>
     </div>
 
-</form>
+</form> -->
+
     </div>
 </div>
+<?php endwhile; else : ?>
+  <p><?php _e( 'Desculpa, nenhuma postagem encontrada.' ); ?></p>
+<?php endif; ?>
+
 <?php get_footer(); ?>

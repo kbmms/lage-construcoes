@@ -48,3 +48,124 @@
     }
 
     add_action( 'wp_enqueue_scripts', 'customScripts' );
+
+
+        add_action( 'init', 'customPosts' );
+
+    function customPosts() {
+
+      $labels = array(
+
+        'name' => _x('servico', 'post type general name'),
+
+        'singular_name' => _x('servicos', 'post type singular name'),
+
+        'add_new' => _x('Adicionar Novo', 'Serviço'),
+
+        'add_new_item' => __('Adicionar Novo servico'),
+
+        'edit_item' => __('Editar Serviço'),
+
+        'new_item' => __('Novo Serviço'),
+
+        'all_items' => __('Todos Serviços'),
+
+        'view_item' => __('Ver  Serviço'),
+
+        'search_items' => __('Procurar Serviço'),
+
+        'not_found' =>  __('Nenhum servico encontrado'),
+
+        'not_found_in_trash' => __('Nenhum servico encontrado'),
+
+        'parent_item_colon' => '',
+
+        'menu_name' => 'Serviços'
+
+      );
+
+      $args = array(
+
+        'labels' => $labels,
+
+        'public' => true,
+
+        'publicly_queryable' => true,
+
+        'show_ui' => true,
+
+        'show_in_menu' => true,
+
+        'query_var' => true,
+
+        'rewrite' => true,
+
+        'capability_type' => 'post',
+
+        'hierarchical' => false,
+
+        'supports' => array( 'editor', 'title', 'page-attributes' )
+
+      );
+
+      register_post_type('servicos',$args);
+
+
+
+      $labels = array(
+
+        'name' => _x('cliente', 'post type general name'),
+
+        'singular_name' => _x('clientes', 'post type singular name'),
+
+        'add_new' => _x('Adicionar Novo', 'Cliente'),
+
+        'add_new_item' => __('Adicionar Novo cliente'),
+
+        'edit_item' => __('Editar Cliente'),
+
+        'new_item' => __('Novo Cliente'),
+
+        'all_items' => __('Todos Serviços'),
+
+        'view_item' => __('Ver  Cliente'),
+
+        'search_items' => __('Procurar Cliente'),
+
+        'not_found' =>  __('Nenhum cliente encontrado'),
+
+        'not_found_in_trash' => __('Nenhum cliente encontrado'),
+
+        'parent_item_colon' => '',
+
+        'menu_name' => 'Clientes'
+
+      );
+
+      $args = array(
+
+        'labels' => $labels,
+
+        'public' => true,
+
+        'publicly_queryable' => true,
+
+        'show_ui' => true,
+
+        'show_in_menu' => true,
+
+        'query_var' => true,
+
+        'rewrite' => true,
+
+        'capability_type' => 'post',
+
+        'hierarchical' => false,
+
+        'supports' => array('title', 'page-attributes' )
+
+      );
+
+      register_post_type('clientes',$args);
+
+    }

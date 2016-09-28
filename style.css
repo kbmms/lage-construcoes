@@ -149,9 +149,6 @@ font-family: 'Montserrat', sans-serif;
 
 }
 
-
-
-
 /*=========== MAIN CONTENT ============*/
 .main-content-container {
     position: relative;
@@ -217,10 +214,6 @@ font-weight: 400;
 }
 
 
-
-
-
-
 .container-fluid h1 {
 
 font-family: Montserrat;
@@ -247,11 +240,6 @@ text-align: left;
     position: relative;
     top: 65px;
 }
-
-
-
-
-
 
 
 /*=============== Clientes ==============*/
@@ -365,13 +353,6 @@ transform: scaleY(1.0004);
 }
 
 
-
-
-
-
-
-
-
 /*=================== INTERNAS ==================*/
 .clientes-interna li {
     display: inline-block;
@@ -434,7 +415,7 @@ span.marcador {
      font-family: Montserrat;
    font: 14px;
 }
-.btn-send-form button{
+.btn-send-form input{
     background: #000;
      font-family: Montserrat;
      color: #fff;
