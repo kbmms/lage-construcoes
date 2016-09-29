@@ -17,15 +17,39 @@
       <br><br>
         <div class="container">
       <div class="row menu-footer">
-          <nav class="text-center">
+                              <?php
+
+            wp_nav_menu(
+                $args = array(
+                    'menu' => 'rodape',
+                    'container' => 'nav',
+                    'container_class' => 'text-center collapse navbar-collapse scroll-go-link',
+                    'container_id' => 'bs-example-navbar-collapse-1',
+                    'menu_class' => '',
+                    'menu_id' => '',
+                    'echo' => true,
+                    'fallback_cb' => 'wp_page_menu',
+                    'before' => '',
+                    'after' => '',
+                    'link_before' => '',
+                    'link_after' => '',
+                    'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    'depth' => 0,
+                    'walker' => new WPDocs_Walker_Nav_Menu(),
+                    'theme_location' => 'rodape'
+                )
+            );
+
+        ?>
+<!--           <nav class="text-center">
             <ul class="">
               <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-              <li><a href="#">QUEM SOMOS</a></li>
-              <li><a href="#">SERVIÇOS</a></li>
-              <li><a href="#">CLIENTES</a></li>
+              <li><a href="#">&bull; QUEM SOMOS</a></li>
+              <li><a href="#">&bull; SERVIÇOS</a></li>
+              <li><a href="#">&bull; CLIENTES</a></li>
                <li><a href="#" class="btn-estilizado-footer"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> CONTATO</a></li>
             </ul>
-          </nav>
+          </nav> -->
       </div>
       <br><br>
       <div class="row text-center">

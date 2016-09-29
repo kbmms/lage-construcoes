@@ -22,7 +22,7 @@ border-bottom: 1px solid #ccc;
 border-bottom: 1px solid #ccc;
     z-index: 9999;
     width: 100%;
-    background: #000;
+    background: url(imagens/bg/Lage_bg-header_01.jpg);
 }
 .menu nav {
     position: absolute;
@@ -37,16 +37,23 @@ padding: 0 5px;
     font-family: Montserrat;
 }
 
-.menu a.menu-estilizado-topo {
+
+.menu-direita-one li a{
+    color: #000;
+}
+.menu a.menu-estilizado-topo, #menu-direita a{
   font-family: Montserrat;
-color:  #000000;
+
 font-size: 13px;/* Aproximação devido à substituição de fonte */
 font-weight: 600;
-line-height: 60px;/* Aproximação devido à substituição de fonte */
+
 text-align: left;
 border-radius: 3px;
 background-color:  #ffffff;
 padding: 10px 20px;
+}
+li.current-menu-item .page_item{
+
 }
 .menu-footer a:hover {
      color: #dfb259;
@@ -54,6 +61,11 @@ padding: 10px 20px;
 }
 .menu-footer a.btn-estilizado-footer{
     border-radius: 3px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+.menu-footer  li:last-child {
+        border-radius: 3px;
     border: 1px solid #fff;
     padding: 10px 20px;
 }
@@ -383,6 +395,8 @@ span.marcador {
 }
 .interna-content-full, .servicos-interna-full, .clientes-interna-full, .quem-somos-full {
         padding: 40px 0;
+        background: url(imagens/bg/Lage_bg-content.jpg);
+        background-size: cover;
 }
 
 .form-group input:focus, .form-group textarea:focus {
@@ -424,4 +438,16 @@ span.marcador {
       font-family: Montserrat;
       font-size: 14px;
       color: #000;
+}
+li.current-menu-item a {
+    color: #dfb259;
+}
+a.facebook-btn {
+    position: relative;
+    top: 70px;
+    left: 170px;
+}
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
 }

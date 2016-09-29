@@ -169,3 +169,48 @@
       register_post_type('clientes',$args);
 
     }
+         // MENUS
+
+
+
+        register_nav_menus( array(
+
+
+
+            // TOPO
+
+            'esquerda' => esc_html__( 'Menu da Esquerda', 'Lage' )
+
+
+
+        ) );
+
+        register_nav_menus( array(
+
+
+
+            // TOPO
+
+            'direita' => esc_html__( 'Menu da Direita', 'Lage' )
+
+
+
+        ) );
+
+        register_nav_menus( array(
+
+
+
+            // TOPO
+
+            'rodape' => esc_html__( 'Menu do rodape', 'Lage' )
+
+
+
+        ) );
+
+// WALKER - RESPONSÁVEL POR CUSTOMIZAR O MENU
+
+
+
+   require_once( 'setup/walker.php' );

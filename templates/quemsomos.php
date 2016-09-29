@@ -3,8 +3,15 @@
              <div class="col-md-6">
                <h1>Quem Somos</h1>
              </div>
+               <?php $query = new WP_Query( 'category_name=quemsomos&showposts=1' ); ?>
+               <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
               <div class="col-md-6">
-              <p>Ed sit amet iaculis magna. Sed vitae eros magna. Aliquam et enim nec nunc tincidunt accumsan. Integer nec neque semper tellus gravida semper a a ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <?php the_content() ?>
               </div>
+               <?php endwhile;
+               wp_reset_postdata();
+               else : ?>
+               <p><?php _e( 'Desculpa, nenhuma postagem encontrada.' ); ?></p>
+               <?php endif; ?>
           </div>
       </div>

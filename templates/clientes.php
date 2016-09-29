@@ -4,33 +4,17 @@
         </div>
         <div class="owl">
           <div id="owl-demo" class="owl-carousel owl-theme text-center">
-  <div class="item">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/nks_03.png" height="27" width="74" alt="">
-  </div>
-  <div class="item">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/nestle_03.png" height="38" width="142" alt="">
-  </div>
-  <div class="item">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/tim_03.png" height="49" width="75" alt="">
-  </div>
-    <div class="item">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/nks_03.png" height="27" width="74" alt="">
-  </div>
-  <div class="item">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/nestle_03.png" height="38" width="142" alt="">
-  </div>
-  <div class="item">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/tim_03.png" height="49" width="75" alt="">
-  </div>
-    <div class="item">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/tim_03.png" height="49" width="75" alt="">
-  </div>
-    <div class="item">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/tim_03.png" height="49" width="75" alt="">
-  </div>
-    <div class="item">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/imagens/tim_03.png" height="49" width="75" alt="">
-  </div>
+               <?php $query = new WP_Query( 'post_type=clientes&order=ASC&showposts=-1' ); ?>
+               <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+                    <div class="item">
+                     <img src="<?php the_field('imagem_cliente') ?>" alt="<?php the_title() ?>">
+                    </div>
+               <?php endwhile;
+               wp_reset_postdata();
+               else : ?>
+               <p><?php _e( 'Desculpa, nenhuma postagem encontrada.' ); ?></p>
+               <?php endif; ?>
+
 </div>
 
 
